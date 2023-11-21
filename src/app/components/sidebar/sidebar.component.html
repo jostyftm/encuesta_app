@@ -1,0 +1,17 @@
+<div>
+    <div class="my-3 p-1">
+        <h2>Aqui va el logo</h2>
+        <ul class="nav flex-column mt-5">
+            @for (item of menuItems; track item.link) {
+                <a
+                    [href]="item.link"
+                    class="nav-link"
+                >
+                    {{item.title}}
+                </a>
+               
+            }
+        </ul>
+    </div>
+</div>
+
